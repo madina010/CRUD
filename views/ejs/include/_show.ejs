@@ -1,0 +1,18 @@
+<% for(let i = 0; i < users.length; i++) {%>
+
+<tr>
+    <th><%= i+1 %></th>
+    <th><%= users[i].name%></th>
+    <th><%= users[i].email%></th>  
+    <th><%= users[i].gender%></th>
+    <th><%= users[i].status%></th>
+    <td>
+        <a href="/update-user" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fa-solid fa-pen"></i></span>
+        </a>
+        <a href="#" class="btn border-shadow delete">
+            <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
+        </a>
+    </td>
+</tr>
+<% } %>
